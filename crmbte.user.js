@@ -198,7 +198,11 @@ function performAddSettings(jNode) {
   $('#bte_settings').on('click', bte_settings)
 }
 function setDefultQueries(jNode) {
-  jNode.value = "1";
+  jNode.value = "[User] TEAM-1";
+}
+
+function setDefultQueries2(jNode) {
+  jNode.empty().html("wangjian");
 }
 
 //
@@ -208,6 +212,8 @@ waitForKeyElements('a[target="CRM7"]', performChangeActivityLink);
 waitForKeyElements('a[target="CSS_BSP_CALLER"]', performChangeBCPLink);
 waitForKeyElements('td[id$="title"]', performAddSettings);
 waitForKeyElements('input[id="WD1A"]', setDefultQueries);
+waitForKeyElements('input[id="WD1A"]', setDefultQueries);
+waitForKeyElements('span[id="WD18-text"]', setDefultQueries2);
 
 
 
