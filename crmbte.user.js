@@ -198,11 +198,11 @@ function performAddSettings(jNode) {
   $('#bte_settings').on('click', bte_settings)
 }
 function setDefultQueries(jNode) {
-  jNode.value = "[User] TEAM-1";
+  jNode.val("[User] TEAM-1");
 }
 
 function setDefultQueries2(jNode) {
-  jNode.empty().html("wangjian");
+  jNode.empty().html("wangjian2");
 }
 
 //
