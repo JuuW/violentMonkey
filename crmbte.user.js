@@ -3,6 +3,7 @@
 // @namespace   jdostert
 // @description Activity Monitor Better Than Ever
 // @include     https://icp.wdf.sap.corp/sap/bc/webdynpro/sap/zs_wd_acm*
+// @include     https://icp.wdf.sap.corp/sap*
 // @version     1.05
 // @grant       none
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
@@ -202,7 +203,12 @@ function setDefultQueries(jNode) {
 }
 
 function setDefultQueries2(jNode) {
-  jNode.empty().html("wangjian2");
+ // jNode.empty().html("wangjian2");
+}
+
+function setNoteRows(jNode) {
+  jNode.rows(50);
+	jNode.rows = 50;
 }
 
 //
@@ -214,6 +220,7 @@ waitForKeyElements('td[id$="title"]', performAddSettings);
 waitForKeyElements('input[id="WD1A"]', setDefultQueries);
 waitForKeyElements('input[id="WD1A"]', setDefultQueries);
 waitForKeyElements('span[id="WD18-text"]', setDefultQueries2);
+waitForKeyElements('textarea[id="C21_W71_V72_text_lines"]', setNoteRows);
 
 
 
