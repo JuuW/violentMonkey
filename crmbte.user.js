@@ -207,8 +207,7 @@ function setDefultQueries2(jNode) {
 }
 
 function setNoteRows(jNode) {
-  jNode.rows(50);
-	jNode.rows = 50;
+  jNode.attr('rows', 50);
 }
 
 //
